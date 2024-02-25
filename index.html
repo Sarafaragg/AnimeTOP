@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeTOP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header >
+      <nav class="navbar navbar-expand-lg " >
+        <div class="container-fluid headd">
+          <a class="navbar-brand text-white" style="font-weight: 700;" href="#">anime  <span style="color: rgb(201, 116, 59);padding-right: 20px;">TOP</span></a>
+          <button class="navbar-toggler " style="background-color: rgb(244, 117, 33);" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item ">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-white" href="#">Our Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item" style="color: gray;" href="#">Categories</a></li>
+                  <li><a class="dropdown-item" style="color: gray;" href="#"> Anime Details</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" style="color: gray;" href="#"> Anime Watching </a></li>
+                  <li><a class="dropdown-item" style="color: gray;" href="#"> Blog Details </a></li>
+                  <li><a class="dropdown-item" style="color: gray;" href="#"> Sign Up</a></li>
+                  <li><a class="dropdown-item" style="color: gray;" href="#">Login</a></li>
+                  <li><a class="dropdown-item" style="color: gray;" href="#">more..</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">content</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn text-white border-2 border-white" >Search</button>
+              <button class="btn ms-2 btnns"  style="background-color:  rgb(244, 117, 33);" data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="button">login</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Modal -->
+      <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #18191a;">
+              <h1 class="modal-title fs-5 text-white" id="staticBackdropLabel">log in</h1>
+              <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-white"  style="background-color: #262626;">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div><div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">remmber me</label>
+                     </div>
+                  </form>
+            </div>
+            <div class="modal-footer d-flex justify-content-between" style="background-color: #262626;;">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btnns"  style="background-color:  rgb(244, 117, 33);">log in</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide bggb" data-bs-ride="carousel" style="height: 100vh;">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active h-100">
+                <img src="images/satoru-gojo-jujutsu-kaisen-79.jpg" class="d-block h-100 w-100" alt="jujutsu-kaisen" draggable="false">
+                <div class="carousel-caption photos">
+                  <h2>jujutsu-kaisen</h2>
+                  <p>episode 24</p>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="images/one pice.jpg" class="d-block h-100 w-100" alt="one pice" draggable="false">
+                <div class="carousel-caption photos">
+                  <h2>one pice</h2>
+                  <p>episode 1150</p>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="images/tokyo.jpeg" class="d-block h-100 w-100" alt="tokyo" draggable="false">
+                <div class="carousel-caption photos">
+                  <h2>tokyo revengers</h2>
+                  <p>episode 24.</p>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="images/1e041-16778770469562-1920.jpg" class="d-block h-100 w-100" alt="The Angel Next Door Spoils Me Rotten" draggable="false">
+                <div class="carousel-caption photos">
+                  <h2>The Angel Next Door Spoils Me Rotten.</h2>
+                  <p>episode 12</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+         <div class="social ">
+           <ul>
+             <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+             <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+         </div><!-- social -->
+    </section>
+    <section style="background-color: #1f2021;">
+        <div class="role">          
+          <div class="col-12 alert text-white" role="alert" style="background-color: #1f2021;">
+            <p class="h3" style="font-weight: 700;"> welcom</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quaerat?
+           <button type="button" class="btn btn-outline-light text- btn-lg d-block mt-3">about us</button>
+          </div> 
+          <div class="col-12 p-4">
+           <h2 class="text-center text-white">
+           more
+           </h2>
+         </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+         <div class="accordion-item "  style="background-color: #222222;">
+            <h2 class="accordion-header">
+           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="background-color: #333333;
+           border-radius: 10px; font-size: 21px;font-weight: 700; text-transform: capitalize;color: #cccccc;">
+             games
+            </button>
+            </h2>
+           <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+             <div class="accordion-body text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, deleniti!</div>
+             </div>
+           </div>
+            <div class="accordion-item" style="background-color: #222222;">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"style="background-color: #333333;
+                border-radius: 10px; font-size: 21px;font-weight: 700; text-transform: capitalize;color: #cccccc;"> manga
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, dolore.</div>
+              </div>
+            </div>
+            <div class="accordion-item " style="background-color: #222222;">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="background-color: #333333;
+                 border-radius: 10px; font-size: 21px;font-weight: 700; text-transform: capitalize;color: #cccccc;">
+                  movies
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nihil?</div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section>
+      <div class=""  style="background-color: #1f2021; color: white;">
+        <div class="col-12 container">
+         <div class="text-center p-4">
+           <p class="h3 text-start">reviews</p>
+         </div>
+         <div class="row mb-5">
+            <div class="col-sm-1">
+             <div>
+               <img class="photorev" src="images/yuzu-2.png" alt="yuzu" draggable="false">
+             </div> <!-- photo -->
+            </div>
+            <div class="col-sm-11">
+              <div>
+               <p class="d-inline"> mdwnettleton</p>
+               <span class="d-inline p-2" style="color: rgb(130, 130, 130);">(2 reviews)</span>
+               <span style="color: rgb(130, 130, 130);">12 January 2024</span>
+             </div> <!-- name -->
+              <div class="under-photo">
+                <ul class="p-1" >
+                  <li class="d-inline "> <i class="fas fa-star"></i></li>
+                  <li class="d-inline"> <i class="fas fa-star"></i></li>
+                  <li class="d-inline"> <i class="fas fa-star"></i></li>
+                  <li class="d-inline"> <i class="fas fa-star"></i></li>
+                  <li class="d-inline"> <i class="far fa-star"></i></li>
+               </ul>
+             </div><!-- icons -->
+            <div>
+              <h5> Great start to an emotional journey</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+                corporis, quod quia tempore 
+                quae ea.</p>
+            </div>
+            <div class="d-sm-flex justify-content-between mb-4">
+              <div class="ysno">
+               <span style="color: rgb(130, 130, 130);">626 out of 652 people found this helpful.Was this review helpful to you?</span>
+               <a href="#"><p class="d-inline p-2 ysno">yas</p></a>
+               <a href="#"><p class="d-inline">no</p></a>
+              </div>
+              <div class="flaggg">
+                <i class="fas fa-flag p-2"></i> 
+                <i class="fas fa-share-alt"></i>
+              </div>
+            </div>
+         </div> <!-- reviews 1 -->
+         <div class="row">
+            <div class="col-sm-1">
+             <div>
+               <img class="photorev" src="images/1008-mitrasphere-matilda.png" alt="yuzu" draggable="false">
+             </div> <!-- photo -->
+            </div>
+            <div class="col-sm-11">
+              <div>
+               <p class="d-inline"> mdwnettleton</p>
+               <span class="d-inline p-2" style="color: rgb(130, 130, 130);">(2 reviews)</span>
+               <span style="color: rgb(130, 130, 130);">12 January 2024</span>
+             </div> <!-- name -->
+              <div class="under-photo">
+                <ul  class="p-1">
+                  <li class="d-inline"> <i class="fas fa-star"></i></li>
+                  <li class="d-inline"> <i class="fas fa-star"></i></li>
+                  <li class="d-inline"> <i class="fas fa-star"></i></li>
+                  <li class="d-inline"> <i class="fas fa-star"></i></li>
+                  <li class="d-inline"> <i class="far fa-star"></i></li>
+               </ul>
+             </div><!-- icons -->
+            <div>
+              <h5> Great start to an emotional journey</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+                corporis, quod quia tempore 
+                quae ea.</p>
+            </div>
+            <div class="d-sm-flex justify-content-between mb-4">
+              <div class="ysno">
+               <span style="color: rgb(130, 130, 130);">626 out of 652 people found this helpful.Was this review helpful to you?</span>
+               <a href="#"><p class="d-inline p-2 ysno">yas</p></a>
+               <a href="#"><p class="d-inline">no</p></a>
+              </div>
+              <div class="flagg">
+                <i class="fas fa-flag p-2" ></i>
+                <i class="fas fa-share-alt"></i>
+              </div>
+            </div>
+         </div> <!-- reviews 2 -->
+         <div class="row">
+            <div class="col-sm-1">
+             <div>
+               <img class="photorev" src="images/solo_teaser_visual.png" alt="yuzu" draggable="false">
+             </div> <!-- photo -->
+            </div>
+            <div class="col-sm-11">
+              <div>
+               <p class="d-inline"> mdwnettleton</p>
+               <span class="d-inline p-2" style="color: rgb(130, 130, 130);">(2 reviews)</span>
+               <span style="color: rgb(130, 130, 130);">12 January 2024</span>
+             </div> <!-- name -->
+              <div class="under-photo">
+                <ul  class="p-1">
+                  <li class="d-inline"> <i class="fas fa-star"></i></li>
+                  <li class="d-inline"> <i class="fas fa-star"></i></li>
+                  <li class="d-inline"> <i class="fas fa-star"></i></li>
+                  <li class="d-inline"> <i class="fas fa-star"></i></li>
+                  <li class="d-inline"> <i class="far fa-star"></i></li>
+               </ul>
+             </div><!-- icons -->
+            <div>
+              <h5> Great start to an emotional journey</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+                corporis, quod quia tempore i
+                quae ea.</p>
+            </div>
+            <div class="d-sm-flex justify-content-between">
+              <div class="ysno">
+               <span style="color: rgb(130, 130, 130);">626 out of 652 people found this helpful.Was this review helpful to you?</span>
+               <a href="#"><p class="d-inline p-2 ysno">yas</p></a>
+               <a href="#"><p class="d-inline">no</p></a>
+              </div>
+              <div class="text-end">
+                <i class="fas fa-flag p-2"></i>
+                <i class="fas fa-share-alt"></i>
+              </div>
+            </div>
+         </div> <!-- reviews 3 -->
+         <div class="px-auto">
+          <span>add review</span>
+          <textarea  class="form-control" id="exampleFormControlTextarea1" rows="0"></textarea>
+          <button class=" di d-block mt-4 send" type="button" onclick="alert('thanks for review')">send</button>
+          <div class="mb-3">
+        </div>
+      </div>
+     <hr>
+   </section>
+   <section style="background-color: #18191a;">   
+     <div class=" " style="background-color: #18191a;">   
+       <div class="">
+          <div class="" style="background-image: url(images/the-angel-next-door-spoils-me-rotten.jpg); background-attachment: fixed; background-size: cover;  background-position: center; height: 300px; ;" >
+          </div> 
+         </div>
+        <p class="h2 text-center text-white p-3 " style="font-weight: 700;">most popular</p>
+        <div class="container mt-5">
+         <div class="d-sm-flex justify-content-between ">
+           <div class="col-4 mb-4 sppy p-2 endsc" style=" width: 400px; " >
+             <div class="mx-2">
+               <img src="images/spy x famile.jpg" style=" height: 100%; width: 100%;"  alt="spy x family">
+               <h3 class="text-white h4 mt-2"> spy x family</h3>
+               <div class=" d-flex justify-content-between zzx">
+                  <p class="" style="color: rgb(42, 189, 187);">Genre:<p class="text-white" style="padding-right: 80px;"> Action, Comedy, Drama.</p></p> 
+                 <a href="#"> <i class="fas fa-play ">play</i></a>
+               </div>
+             </div>
+           </div> <!-- 1 -->
+           <div class="col-4 mb-4 sppy p-2 endsc"  style=" width: 400px;">
+             <div class="mx-2 ">
+               <img src="images/922742d9acaeba7d887ed11b6caab0e4.jpe" style=" height: 100%; width: 100%;" class="" alt="chainsaw man" draggable="false">
+               <h3 class="text-white h4 mt-2"> chainsaw man</h3>
+               <div class=" d-flex justify-content-between zzx"> 
+               <p class="" style="color: rgb(42, 189, 187);">Genre:<p class="text-white" style="padding-right: 80px;"> Action, Comedy, Drama.</p></p> 
+                <a href="#"> <i class="fas fa-play ">play</i></a>
+               </div>
+             </div>
+           </div> <!-- 2 -->
+           <div class="col-4 mb-4 sppy p-2 endsc" style=" width: 400px;">
+             <div class="mx-2">
+               <img src="images/5e7f533c3b4f46244ca228af62e83dfa.jpe" style=" height: 100%; width: 100%;" alt="Solo Leveling" draggable="false">
+               <h3 class="text-white h4 mt-2"> Solo Leveling</h3>
+               <div class=" d-flex justify-content-between zzx">
+                <p class="" style="color: rgb(42, 189, 187);">Genre:<p class="text-white" style="padding-right: 80px;"> Action, Comedy, Drama.</p></p> 
+                <a href="#"> <i class="fas fa-play ">play</i></a>
+               </div>
+             </div>
+           </div><!-- 3 -->
+         </div> <!-- top -->
+         <div class="d-sm-flex justify-content-between ">
+           <div class="col-4 mb-4 sppy p-2 endsc" style=" width: 400px;">
+             <div class="mx-2">
+               <img src="images/09dc911e6e6bdc12cb4d0d46e8876204.jpe" style=" height: 100%; width: 100%;" alt="">
+               <h3 class="text-white h4 mt-2"> dr. stone</h3>
+               <div class=" d-flex justify-content-between zzx">  <p class="" style="color: rgb(42, 189, 187);">Genre:<p class="text-white" style="padding-right: 80px;"> Action, Comedy, Drama.</p></p> 
+                <a href="#"> <i class="fas fa-play ">play</i></a>
+               </div>
+             </div>
+           </div><!-- 4 -->
+           <div class="col-4 mb-4 sppy p-2 endsc" style=" width: 400px;">
+             <div class="mx-2">
+               <img src="images/conan.jpg"  style=" height: 100%; width: 100%;" alt="detective conan" draggable="false">
+               <h3 class="text-white h4 mt-2"> detective conan</h3>
+               <div class=" d-flex justify-content-between zzx">  <p class="" style="color: rgb(42, 189, 187);">Genre:<p class="text-white" style="padding-right: 80px;"> Action, Comedy, Drama.</p></p> 
+                <a href="#"> <i class="fas fa-play ">play</i></a>
+               </div>
+             </div>
+           </div><!-- 5 -->
+           <div class="col-sm-4 mb-4 sppy p-2 endsc" style=" width: 400px;">
+             <div class="mx-2">
+               <img src="images/the angel next door at me.jpg"  style=" height: 100%; width: 100%;" alt=" the angel next door at me" draggable="false">
+               <h3 class="text-white h4 mt-2">The Angel Next Door Spoils Me</h3>
+               <div class=" d-flex justify-content-between zzx">  <p class="" style="color: rgb(42, 189, 187);">Genre:<p class="text-white" style="padding-right: 80px;"> Action, Comedy, Drama.</p></p> 
+                <a href="#"> <i class="fas fa-play ">play</i></a>
+               </div>
+             </div>
+           </div><!-- 6 -->
+          </div> <!-- center -->
+          <div class="d-sm-flex justify-content-evenly mb-5">
+           <div class="col-4 mb-4 sppy p-2 endsc" style=" width: 400px;">
+             <div class="mx-2" >
+               <img src="images/9217662a508e16c1987377d026272ec3.jpe" style=" height: 100%; width: 100%;" alt=" 7th Time Loop" draggable="false">
+               <h3 class="text-white h4 mt-2"> 7th Time Loop </h3>
+               <div class=" d-flex justify-content-between zzx">  <p class="" style="color: rgb(42, 189, 187);">Genre:<p class="text-white" style="padding-right: 80px;"> Action, Comedy, Drama.</p></p> 
+                <a href="#"> <i class="fas fa-play ">play</i></a>
+               </div>
+            </div>
+           </div><!-- 7 -->
+           <div class="col-4 mb-4 sppy p-2 endsc" style=" width: 400px;">
+            <div class="mx-2">
+              <img src="images/jojo.jpg"  style=" height: 100%; width: 100%;" alt="jojo" draggable="false">
+              <h3 class="text-white h4 mt-2"> jojo: bizarre adventure</h3>
+              <div class=" d-flex justify-content-between zzx">  <p class="" style="color: rgb(42, 189, 187);">Genre:<p class="text-white" style="padding-right: 80px;"> Action, Comedy, Drama.</p></p> 
+                <a href="#"> <i class="fas fa-play ">play</i></a>
+              </div>
+            </div>
+          </div><!-- 8 -->
+         </div>
+        </div>
+       <div class=" ">
+        <div class="" style="background-image: url(images/the-angel-next-door-spoils-me-rotten.jpg); background-attachment: fixed; background-size: cover;  background-position: center; height: 300px ;"
+        ></div>
+    </div>
+   </section>
+   <section style="background-color: #18191a;">
+     <div class=" " style=" background-color: #18191a;">
+       <div class="">
+         <p class="h2 text-center  text-white p-3 " style="font-weight: 700;">top anime</p>
+       </div>
+       <div class="container mt-5  d-sm-flex justify-content-evenly">
+         <div class="dub mb-4">
+           <div class="card  toop endsc" style="width: 23rem; height: 28rem;">
+              <img  src="images/5e7f533c3b4f46244ca228af62e83dfa.jpe" class="card-img-top w-100 h-100 iimg" alt="Solo Leveling" draggable="false">
+              <div class="card-body position-absolute top-0 w-100 z-2">
+                <span type="premium" class="card-text premiumm"> premium </span>
+              </div>
+             <div class="card-body position-absolute bottom-0 w-100 z-2 topanime">
+                <div>
+                  <img src="images/Solo-Leveling-Crunchyroll-901cd60-e1704389620236.png">
+                </div>
+                <p class="card-text mb-2" style="font-weight: 600;">Solo Leveling</p>
+                <p class="card-text">sub / dub</p>
+              </div>
+           </div>
+          </div><!-- 1 -->
+          <div class="dub mb-4">
+            <div class="card toop endsc" style="width: 23rem; height: 28rem;">
+              <img src="images/f154230aab3191aba977f337d392f812.jpe" class="card-img-top w-100 h-100 iimg" alt="OnePiece" draggable="false">
+             <div class="card-body position-absolute top-0 w-100 z-2 ">
+               <span type="premium" class="card-text premiumm"> premium</span>
+             </div>
+              <div class="card-body position-absolute bottom-0 w-100 z-2 topanime">
+              <div>
+                   <img src="images/Anime_OnePiece_MonkeyDLuffy_Wallpaper_Smiling_HD.jpg">
+                  </div>
+                 <p class="card-text mb-2"  style="font-weight: 600;">One Piece</p>
+                 <p class="card-text">sub / dub</p>
+               </div>
+            </div>
+          </div><!-- 2 -->
+          <div class="dub mb-4">
+           <div class="card position-relative toop endsc" style="width: 23rem; height: 28rem;">
+              <img src="images/e4e80c83c792d81c138e320874dbdffc.jpe" class="card-img-top w-100  iimg" alt="jujutsu kaisen" draggable="false">
+              <div class="card-body position-absolute top-0 w-100 z-2">
+               <span type="premium" class="card-text premiumm"> premium</span>
+             </div> 
+              <div class="card-body position-absolute bottom-0 w-100 z-2 topanime">
+               <div>
+                 <img src="images/Jujutsu-Kaisen-Season-3.jpg">
+               </div>
+               <p class="card-text mb-2"  style="font-weight: 600;">jujutsu kaisen</p>
+               <p class="card-text">sub / dub</p>
+             </div>
+           </div>
+         </div><!-- card -->
+       </div><!-- 3 -->
+     </div>
+     <div class="" style="background-color: #18191a;">
+        <span class="text-white">popular</span>
+     </div>
+   </section>  
+   <section style="background-color: #18191a;">
+     <div class="container" style="background-color: #18191a;">
+       <div class="header">
+          <h2 class="h2 text-center text-white mb-5" style="font-weight: 700;">Top Stories</h2>
+       </div>
+       <div class="row bg-danger  shadow mb-5 bg-body-tertiary rounded sdsdsd">
+         <div class="col-sm-12" style="background-color:#1f2021;">
+          <div class="row cllp1">
+            <div class="col-sm-8 cllpp">
+              <div class="mt-4 p-2 text-white rounded">
+               <h3>vinland saga</h3>
+               <i class="far fa-calendar-alt "></i> 
+               <p class=" d-inline p-1 line" > Feb 19, 2024 8:01am GMT+2</p>
+               <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, nesciunt? Facilis, possimus voluptatibus iusto illum non accusamus temporibus similique facere officia cupiditate quam? Nulla animi error officiis quibusdam, libero porro?
+               Modi ducimus accusantium quod ea omnis delectus? Voluptatum dolores maxime, eos, nisi, porro impedit nam consectetur et quam incidunt consequuntur fugiat id iplat deleniti id necessitatibus harum nobis. Officia, autem?</small>
+                Lorem ipsum...
+               </p>
+             </div>
+             <div class="d-flex flex-row- column-gap-2 mt-5 p-2">
+               <button type="button" class="btn bttn"
+                 style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .40rem; --bs-btn-font-size: .70rem;
+                 border: 1px solid rgb(244, 117, 33);
+                 color: rgb(244, 117, 33) ;">
+                 <i class="fas fa-info-circle p-1"></i>more info
+               </button>
+                <button type="button" class="btn bttn"
+                 style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .40rem; --bs-btn-font-size: .70rem;
+                 border: 1px solid rgb(244, 117, 33);
+                 color: rgb(244, 117, 33) ;">
+                  <i class="fas fa-video p-1"></i>   movie
+                </button>
+                <button type="button" class="btn bttn"
+                  style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .40rem; --bs-btn-font-size: .70rem;
+                  background-color:  rgb(244, 117, 33); color: white;">
+                  <i class="fas fa-play p-1"></i>   watch now
+                </button>
+               </div>
+            </div>
+            <div class="col-sm-4 cllp "  style="height: 400px;">
+              <img src="images/bf50558c81f0ca59d3125b5044d989a1.jpe" alt="horimiya">
+            </div>
+          </div>
+        </div>
+       </div><!-- 1 -->
+        <div class="row bg-danger  shadow mb-5 bg-body-tertiary rounded sdsdsd">
+          <div class="col-sm-12" style="background-color:#1f2021;">
+           <div class="row cllp1">
+             <div class="col-sm-8 order-2">
+               <div class="mt-4 p-2 text-white rounded">
+                  <h3>KAGUYA-SAMA: LOVE IS WAR</h3>
+                  <i class="far fa-calendar-alt "></i> 
+                  <p class=" d-inline p-1 line" > Feb 19, 2024 8:01am GMT+2</p>
+                  <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, nesciunt? Facilis, possimus voluptatibus iusto illum non accusamus temporibus similique facere officia cupiditate quam? Nulla animi error officiis quibusdam, libero porro?
+                   Modi ducimus accusantium quod ea omnis delectus? Voluptatum dolores maxime, eos, nisi, porro impedit nam consectetur et quam incidunt consequuntur fugiat id iplat deleniti id necessitatibus harum nobis. Officia, autem?</small>
+                   Lorem ipsum...
+                  </p>
+                </div>
+                <div class="d-flex flex-row- column-gap-2 mt-5 p-2">
+                  <button type="button" class="btn bttn"
+                    style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .40rem; --bs-btn-font-size: .70rem;
+                    border: 1px solid rgb(244, 117, 33);
+                    color: rgb(244, 117, 33) ;">
+                    <i class="fas fa-info-circle p-1"></i>more info
+                  </button>
+                  <button type="button" class="btn bttn"
+                    style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .40rem; --bs-btn-font-size: .70rem;
+                    border: 1px solid rgb(244, 117, 33);
+                    color: rgb(244, 117, 33) ;">
+                    <i class="fas fa-video p-1"></i>   movie
+                 </button>
+                  <button type="button" class="btn bttn"
+                   style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .40rem; --bs-btn-font-size: .70rem;
+                   background-color:  rgb(244, 117, 33); color: white;">
+                   <i class="fas fa-play p-1"></i>   watch now
+                 </button>
+                </div>
+             </div>
+             <div class="col-sm-4 cllp order-1 rote"  style="height: 400px;">
+               <img src="images/48b9c687382510e7ae195f61fee65c61.jpe" alt="horimiya">
+             </div>
+           </div>
+         </div>
+        </div><!-- 2 -->
+        <div class="row bg-danger  shadow mb-5 bg-body-tertiary rounded sdsdsd">
+          <div class="col-sm-12" style="background-color:#1f2021;">
+           <div class="row cllp1">
+             <div class="col-sm-8 cllpp">
+               <div class="mt-4 p-2 text-white rounded">
+                  <h3>vinland saga</h3>
+                  <i class="far fa-calendar-alt "></i> 
+                  <p class=" d-inline p-1 line" > Feb 19, 2024 8:01am GMT+2</p>
+                  <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, nesciunt? Facilis, possimus voluptatibus iusto illum non accusamus temporibus similique facere officia cupiditate quam? Nulla animi error officiis quibusdam, libero porro?
+                   Modi ducimus accusantium quod ea omnis delectus? Voluptatum dolores maxime, eos, nisi, porro impedit nam consectetur et quam incidunt consequuntur fugiat id iplat deleniti id necessitatibus harum nobis. Officia, autem?</small>
+                   Lorem ipsum...
+                  </p>
+                </div>
+                <div class="d-flex flex-row- column-gap-2 mt-5 p-2">
+                  <button type="button" class="btn bttn"
+                    style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .40rem; --bs-btn-font-size: .70rem;
+                    border: 1px solid rgb(244, 117, 33);
+                    color: rgb(244, 117, 33) ;">
+                    <i class="fas fa-info-circle p-1"></i>more info
+                  </button>
+                  <button type="button" class="btn bttn"
+                    style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .40rem; --bs-btn-font-size: .70rem;
+                    border: 1px solid rgb(244, 117, 33);
+                    color: rgb(244, 117, 33) ;">
+                    <i class="fas fa-video p-1"></i>   movie
+                 </button>
+                  <button type="button" class="btn bttn"
+                   style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .40rem; --bs-btn-font-size: .70rem;
+                   background-color:  rgb(244, 117, 33); color: white;">
+                   <i class="fas fa-play p-1"></i>   watch now
+                 </button>
+                </div>
+             </div>
+             <div class="col-sm-4 cllp"  style="height: 400px;">
+               <img src="images/bf50558c81f0ca59d3125b5044d989a1.jpe" alt="horimiya">
+             </div>
+           </div>
+         </div>
+        </div><!-- 3 -->
+        <div class="row bg-danger  shadow  bg-body-tertiary rounded sdsdsd">
+          <div class="col-sm-12" style="background-color:#1f2021;">
+           <div class="row cllp1 ">
+             <div class="col-sm-8 order-2">
+               <div class="mt-4 p-2 text-white rounded">
+                  <h3>my love story with yamada-kun at lv999</h3>
+                  <i class="far fa-calendar-alt "></i> 
+                  <p class=" d-inline p-1 line" > Feb 19, 2024 8:01am GMT+2</p>
+                  <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, nesciunt? Facilis, possimus voluptatibus iusto illum non accusamus temporibus similique facere officia cupiditate quam? Nulla animi error officiis quibusdam, libero porro?
+                   Modi ducimus accusantium quod ea omnis delectus? Voluptatum dolores maxime, eos, nisi, porro impedit nam consectetur et quam incidunt consequuntur fugiat id iplat deleniti id necessitatibus harum nobis. Officia, autem?</small>
+                   Lorem ipsum...
+                  </p>
+                </div>
+                <div class="d-flex flex-row- column-gap-2 mt-5 p-2">
+                  <button type="button" class="btn bttn"
+                    style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .40rem; --bs-btn-font-size: .70rem;
+                    border: 1px solid rgb(244, 117, 33);
+                    color: rgb(244, 117, 33) ;">
+                    <i class="fas fa-info-circle p-1"></i>more info
+                  </button>
+                  <button type="button" class="btn bttn"
+                    style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .40rem; --bs-btn-font-size: .70rem;
+                    border: 1px solid rgb(244, 117, 33);
+                    color: rgb(244, 117, 33) ;">
+                    <i class="fas fa-video p-1"></i>   movie
+                 </button>
+                  <button type="button" class="btn bttn"
+                   style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .40rem; --bs-btn-font-size: .70rem;
+                   background-color:  rgb(244, 117, 33); color: white;">
+                   <i class="fas fa-play p-1"></i>   watch now
+                 </button>
+                </div>
+             </div>
+             <div class="col-sm-4 cllp order-1 rote"  style="height: 400px;">
+               <img src="images/3979b52cfa29cff802d88b080936ca61.jpe" alt="horimiya">
+             </div>
+           </div>
+         </div>
+        </div><!-- 4 -->
+     </div>
+   </section>
+   <section style=" background-color: #18191a;">
+    <div class="container ">
+      <div class="text-center mb-5 pt-5 " >
+        <h2 class="text-white season" style="font-weight: 800;">NEW SEASON</h2>
+      </div>
+      <div class=" d-sm-flex justify-content-between ">
+        <div class=" p-3 mb-5 rounded endsc new" style=" background-color: #1e1f1f; width: 300px; box-shadow: 5px red 5px green ;">
+          <div class="text-center">
+            <p class="h6 text-white">psychic princess</p>
+          </div>
+          <div class="text-center p-3">
+            <img src="images/7d607d95d9eccdfc60c50b50cec7f372.jpe" alt="psychic princess" draggable="false" style="width: 150px;">
+          </div>
+          <div class="text-center">
+            <p class="h6 p-2"> <a class="link-offset-2 link-underline link-underline-opacity-0 linke p-2" href="#">watch</a></p>
+          </div>
+        </div> <!-- 1 -->
+        <div class=" p-3 mb-5 rounded endsc new" style="  background-color: #1e1f1f;  width: 300px">
+          <div class="text-center">
+            <p class="h6 text-white">gintama</p>
+          </div>
+          <div class="text-center p-3">
+            <img src="images/4fadd5f113c28de1b22d4ef67a78890b.jpe" alt="gintama" draggable="false" style="width: 150px;">
+          </div>
+          <div class="text-center">
+            <p class="h6 text-white p-2"> <a class="link-offset-2 link-underline link-underline-opacity-0 linke p-2" href="#">watch</a></p>
+          </div>
+        </div> <!-- 2 -->
+        <div class=" p-3 mb-5 rounded endsc new" style="  background-color: #1e1f1f;  width: 300px">
+          <div class="text-center">
+            <p class="h6 text-white">dr. stone</p>
+          </div>
+          <div class="text-center p-3">
+            <img src="images/29e0d306dbff3a163acadf66a35b3cf5.jpe" alt="dr. stone" draggable="false" style="width: 150px;">
+          </div>
+          <div class="text-center">
+            <p class="h6 text-white p-2"> <a class="link-offset-2 link-underline link-underline-opacity-0 linke p-2" href="#">watch</a></p>
+          </div>
+        </div> <!-- 3 -->
+        <div class="p-3 mb-sm-5 rounded endsc new" style="  background-color: #1e1f1f;  width: 300px">
+          <div class="text-center">
+            <p class="h6 text-white">spy x family</p>
+          </div>
+          <div class="text-center p-3">
+            <img src="images/095217fdb4f228410df09b18f151be28.jpe" alt="spy x family" draggable="false" style="width: 150px;">
+          </div>
+          <div class="text-center ">
+            <p class="h6 p-2"> <a class="link-offset-2 link-underline link-underline-opacity-0 linke p-2" href="#">watch</a></p>
+          </div>
+        </div> <!-- 4 -->
+      </div>
+    </div>
+   </section>
+   <footer>
+    <div class="">
+      <div class="d-sm-flex justify-content-between mb-3 ">
+        <div class="p-2 last text-center " style="width: 100%; ">
+         <img class="" src="images/service.png" alt="animeTOP" draggable="false" style="width: 80px; height: 80px;" >
+         <p class="d-inline p-3">animeTOP</p>
+       </div>
+       <div class="p-2 last text-center " style="width: 100%;">
+         <img class="" src="images/curiosity.png" alt="animeTOP" draggable="false" style="width: 80px; height: 80px;" >
+         <p class="d-inline p-3">animeTOP</p>
+       </div>
+       <div class="p-2 last text-center " style="width: 100%; ">
+         <img class="" src="images/kaizen.png" alt="animeTOP" draggable="false" style="width: 80px; height: 80px;" >
+         <p class="d-inline p-3">animeTOP</p>
+       </div>
+     </div>
+     <div class="d-sm-flex justify-content-around">
+       <div class=""> 
+         <div class="text-center">
+           <ul class="adicor">
+             <li class="cidd">connect with us</li>
+             <li> <a href="#">youtube</a></li>
+             <li> <a href="#">facebook </a></li>
+             <li> <a href="#">twitter </a></li>
+           </ul>
+         </div> <!-- list1 -->
+       </div>
+       <div class="text-center"> 
+         <div>
+           <ul class="adicor">
+             <li class="cidd">animeTOP</li>
+             <li><a href="#">about</a></li>
+             <li><a href="#">help</a></li>
+             <li> <a href="#">terms of use</a></li>
+             <li> <a href="#">privacy policy</a></li>
+           </ul>
+         </div> <!-- list2 -->
+        </div>
+       <div class="text-center"> 
+         <div>
+           <ul class="adicor">
+             <li class="cidd">account</li>
+             <li> <a href="#"> create account</a></li>
+             <li><a href="#">log in</a></li>
+           </ul>
+         </div> <!-- list3 -->
+       </div>
+     </div>
+     <div class=" text-center pt-2 copyright">
+       <div> <p>Copyright © All rights reserved by animeTOP</p></div>
+     </div>
+   </div>
+   </footer>
+
+     
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

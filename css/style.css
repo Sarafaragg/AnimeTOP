@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    background-color: hsl(210, 4%, 10%,0.2);
+    text-transform: capitalize;
+    font-family: "Helvetica Neue", helvetica, sans-serif;
+}
+.headd{
+    position: fixed;
+    z-index: 1000;
+    background-color: #23252b;
+    height: 6rem;
+    padding-top: 40px;
+}
+/* first sc */
+.photos{
+    background-color: hsl(210, 4%, 10%,0.2);
+}
+.bggb{
+    position: relative;
+}
+.social{
+    position: absolute;
+    top:250px;
+    right: 20px;
+    z-index: 40554;
+    position: fixed;
+}
+.social li{
+    padding: 15px 0;
+    
+}
+.social a{
+   color: white;
+   width: 50px;
+    border-radius: 50%;
+    background-color:  hsl(225, 10%, 15%);
+    padding: 10px 20px;
+}
+.social a:hover{
+  color:  rgb(227, 122, 53);
+}
+/* revews */
+.photorev{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.ysno a{
+    color:   rgb(42, 189, 187);
+    text-decoration: none;
+}
+.ysno a:hover , .adicor li :hover{
+    color: white;
+
+}
+.send{
+    background-color:rgb(26, 26, 26);
+    color: rgb(244, 117, 33);
+    border-radius: 20%;
+    border: 1px solid  rgb(244, 117, 33);
+    width: 50px;
+    height: 50px;
+}
+.send:hover{
+    border: 1px solid  rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+.flagg{
+    margin: 0 20px;
+}
+.flaggg{
+    margin: 0 50px;
+}
+
+@media (max-width: 567px){
+  .flagg{
+    margin-left: 350px;
+   }  
+  .flaggg{
+    margin-left: 350px;
+  }
+}
+/* model */
+.btnns{
+    background-color: rgb(244, 117, 33);
+    color: yellowgreen;
+}
+/* top anime */
+.toop {
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.toop::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    width: 100%;
+    height: 100%;
+}
+.toop:hover {
+    scale: 0.9; 
+    transition: 0.5s;
+}
+.card-text{
+    color: white;
+}
+.iimg{
+    transition: 0.6s;
+}
+.toop:hover.toop .iimg{
+    scale: 1.6;
+    transition: 0.5s;
+ }
+ .topanime img{
+    border-radius: 50%;
+    width: 30%;
+    height: 90%;
+    margin-bottom: 10px;
+ }
+ .premiumm{
+    font-weight: 800;
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 0.0625rem 0.25rem 0px;
+    background-color: rgb(20, 21, 25);
+    color: rgb(250, 184, 24);
+    -webkit-box-align: center;
+    align-items: center;
+    white-space: nowrap;
+    height: 1rem;
+    font-size: 0.625rem;
+    line-height: 0.875rem;
+    box-sizing: border-box;
+    padding: 0.0625rem 0.25rem;
+    column-gap: 0.25rem;
+ }
+ /* most */
+ .bttn{
+    text-transform: capitalize;
+ }
+ .zzx a{
+   z-index: 1002155545;
+   color:  rgb(244, 117, 33);
+ }
+ .sppy{
+     position: relative;
+ }
+ .sppy::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(43, 43, 43);
+    opacity: 0.5;
+    width: 0;
+    height: 0;
+    transition: 0.5s;
+    visibility: hidden;
+    z-index: 1;
+ }
+ .sppy:hover:after{
+     width: 100%;
+     height: 100%;
+     transition: 0.5s;
+     visibility: visible;
+ }
+ .sppy::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(43, 43, 43);
+    opacity: 0.5;
+    width: 0;
+    height: 0;
+    transition: 0.5s;
+    visibility: hidden;
+    z-index: 1;
+ }
+ .sppy:hover::before{
+     width: 100%;
+     height: 100%;
+     transition: 0.5s;
+     visibility: visible;
+ }
+ /* top story */
+ 
+.cllp1b{
+    overflow: hidden;
+    
+}
+.cllp{
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 15% 100%);
+    position: relative;
+    
+}
+.cllp1{
+    overflow: hidden;
+    
+}
+.cllp2{
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+} 
+.sdsdsd img{
+    transition: 0.8s;
+}
+
+.sdsdsd:hover.sdsdsd img{
+    scale: 1.1;
+    border: 1px solid rgb(114, 114, 114,0.3);
+}
+.line{
+    position: relative;
+}
+.line::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -18px;
+    background-color:  rgb(244, 117, 33,0.7);
+    width: 40%;
+    height: 10%;
+    transition: 0.5s;
+}
+.sdsdsd:hover.sdsdsd .line::after{
+    width: 60%;
+}
+.rote{
+    transform: rotateY(180deg);
+}
+@media (max-width: 567px){
+    .cllp{
+        order: 1;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    .cllpp{
+        order: 2;
+    }
+    .rote{
+        transform: rotateY(0deg);
+    
+    }
+    .cllp1{
+        height: 600px;
+    }
+}
+/* new */
+.linke{
+    border: 1px solid  rgb(244, 117, 33);
+    color:  rgb(244, 117, 33);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.linke:hover { 
+    border: 1px solid  rgb(233, 233, 233);
+    color:  rgb(233, 233, 233);
+    box-shadow: 1px  1px  3px   3px    rgb(76, 76, 76)
+}
+.new:hover{
+    box-shadow: 1px  1px  3px   3px    rgb(52, 52, 52)
+}
+@media (max-width: 567px){
+   .endsc{
+    margin: auto;
+   }
+}
+/* footer */
+.last{
+    padding: 50px 20px;
+    border-top: 1px solid rgb(123, 123, 123,0.3);
+    border-bottom: 1px solid rgb(114, 114, 114,0.3);
+}
+.last img{
+    border-radius: 50%;
+}
+.last p{
+    text-align: end;
+}
+li{
+    list-style: none;
+}
+.adicor a{
+    text-decoration: none;
+    color: rgb(218, 218, 218,0.5) ;
+    font-size: 14px;
+}
+.adicor li:hover li{
+    color: rgb(237, 237, 237);
+}
+.copyright{
+    border-top: 1px solid rgb(123, 123, 123,0.3);
+    border-bottom: 1px solid rgb(114, 114, 114,0.3);
+    font-size: 13px;
+}
+.cidd{
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    padding-right: 1.25rem;
+}
+footer{
+    font-family: Lato, "Helvetica Neue", helvetica, sans-serif;
+    background-color:  #18191a;
+    color: rgb(218, 218, 218,0.5);
+}
+.hhrr{
+    width: 500px;
+    height: 40px;
+    color: yellowgreen;
+    color: violet;
+}
+.jkl{
+    width: 250px;
+}
